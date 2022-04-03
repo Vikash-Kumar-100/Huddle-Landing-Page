@@ -14,6 +14,8 @@
       background-color: hsl(192, 100%, 9%);
     }
 
+     /* ======= Reusable Code ======= */
+
     :root{
       --button-color: hsl(322, 100%, 66%);
     }
@@ -110,7 +112,7 @@
 
 
 
-    /* ------------------------------------ */
+    /*============== MAIN CSS ============*/
 
     .wrapper{
       width: 100%;
@@ -122,7 +124,7 @@
       min-height: 100vh;
       background: url(images/bg-hero-desktop.svg);
       background-color:  hsl(193, 100%, 96%);
-      background-attachment: fixed;
+     /*background-attachment: fixed;*/
     }
 
     nav{
