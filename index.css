@@ -1,0 +1,390 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+    }
+
+    .attribution { 
+      font-size: 11px;
+      text-align: center; 
+      background-color: hsl(192, 100%, 9%);
+    }
+
+    :root{
+      --button-color: hsl(322, 100%, 66%);
+    }
+
+
+    .primary-heading{
+      font-family: poppins;
+      font-size: 38px;
+    }
+
+    .secondary-heading{
+      font-family: poppins;
+      font-size: 30px;
+    }
+
+    .primary-text{
+      font-family: outfit;
+      font-size: 20px;
+      /*color: hsl(208, 11%, 55%);*/
+    }
+
+    .secondary-text{
+      font-family: outfit;
+      font-size: 18px;
+      color:hsl(208, 11%, 55%);
+    }
+    .tertiary-text{
+      font-family: poppins;
+      font-size: 18px;
+    }
+
+    .footer-text{
+      color:white;
+      font-size: 17px;
+      font-weight: lighter;
+      font-family: outfit;
+      margin-bottom: 20px;
+    }
+
+    .center{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .space-between{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .fxd-row{
+      display: flex;
+      flex-direction: row;
+      gap:20px;
+
+    }
+    .fxd-col{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .row-reverse{
+      flex-direction: row-reverse;
+    }
+
+    .rounder{
+      border-radius: 50px;
+    }
+
+    .bg-cover{
+      background-size: cover;
+    }
+    .bg-contain{
+      background-size: 100% 40%; /* i also confused why i did this */
+    }
+    .bg-center{
+      background-position: center;
+    }
+
+    .shadow{
+      box-shadow: 0 0 10px 0 hsl(208, 11%, 85%)
+    }
+
+    .glow{
+      transition: .3s all;
+    }
+    .glow:hover{
+      background-color:  hsl(322, 100%, 75%);
+    }
+
+
+
+
+
+    /* ------------------------------------ */
+
+    .wrapper{
+      width: 100%;
+      height: auto;
+    }
+
+    header{
+      width: 100%;
+      min-height: 100vh;
+      background: url(images/bg-hero-desktop.svg);
+      background-color:  hsl(193, 100%, 96%);
+      background-attachment: fixed;
+    }
+
+    nav{
+      width: 100%;
+      min-height: 80px;
+      /*background-color: wheat;*/
+      padding: 0 40px;
+    }
+    nav a{
+      text-decoration: none;
+      color:black;
+    }
+    .logo{
+      width: 180px;
+      height: 80px;
+      background-image: url(images/logo.svg);
+    }
+    .button{
+      width: 180px;
+      height: 50px;
+      background-color: #fff;
+      font-weight: bolder;
+    }
+    .top-text-area{
+      width: 100%;
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 100px;
+
+    }
+
+    .top-article{
+      width: 50%;
+      min-height: 100%;
+      padding: 10px;
+
+    }
+
+    .top-article h1{
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .top-article p{
+      margin-bottom: 40px;
+    }
+
+    .top-article a{
+      display: flex;
+      width: 250px;
+      height: 50px; 
+      background-color:var(--button-color);
+      text-decoration: none;
+      color:white;
+
+
+      margin-bottom: 40px;
+    }
+    .image-area{
+      width: 50%;
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*background-color: yellow;*/
+    }
+    .img{
+      min-width: 100%;
+      height: 400px ;
+      /*background-color: tomato;*/
+      background-image: url(images/illustration-mockups.svg);
+      background-size: contain;
+      background-position: center;
+    }
+
+
+
+
+    .atricle-area{
+      width: 100%;
+      height: auto;
+      padding: 60px 100px 100px 100px;
+      /*position: relative;*/
+    }
+
+    .articles{
+      width: 100%;
+      min-height: 320px;
+      margin: 40px 0 ;
+      padding: 0 60px;
+    }
+
+    .articles div{
+      width: 40%;
+    }    
+
+    .img-article{
+      width: 300px;
+      height: 280px;
+      background-size: contain;
+      background-position: center;
+      /*background-color: red;*/
+    }
+
+    .img-grow{
+      background-image: url(images/illustration-grow-together.svg);
+    }
+
+    .img-flowing{
+      background-image: url(images/illustration-flowing-conversation.svg);
+    }
+
+    .img-user{
+      background-image: url(images/illustration-your-users.svg);
+    }
+
+
+    .card-area{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+    }
+
+    .over-card{
+      width: 600px;
+      height: 180px;
+      border-radius: 20px;
+      flex-direction: column;
+      position: absolute;
+      top:-30px;
+
+      background-color: #fff;
+      box-shadow: 0 0 10px #0002;
+    }
+
+    .over-card a{
+      width: 300px;
+      height: 50px;
+      background-color: var(--button-color);
+      margin: 20px 0;
+      text-decoration: none;
+      color: white;
+
+    }
+
+
+    #footer{
+      width: 100%;
+      min-height: 400px;
+
+      background-color: hsl(192, 100%, 9%);
+
+      margin-top: 80px;
+      padding:  100px 40px 40px 40px;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-content{
+      width: 100%;
+      min-height: 260px;
+      /*background-color: red;*/
+    }
+
+    .footer-logo{
+      width: 180px;
+      height: 50px;
+      margin-bottom: 20px;
+      background-image: url(images/logo2.svg);
+      background-size: contain;
+    }
+
+    .address{
+      width:40%;
+      padding-left:20px;
+    }
+    .about,.career,.social-media{
+      margin-top: 40px;
+      width: 20%;
+      gap:20px;
+    }
+
+    .social-media{
+      gap:20px;
+    }
+
+    .social-media div{
+      min-width: 30px;
+      min-height: 30px;
+      /*background-color: #fff;*/
+      margin-left: 20px;
+      background-size: contain;
+      cursor: pointer;
+
+    }
+
+    .social-media div:hover{
+      fill-rule:;
+    }
+
+    .facebook{
+      background-image: url(images/icon-facebook.svg);
+      position: relative;
+    }
+    .twitter{
+      background-image: url(images/icon-twitter.svg);
+    }
+    .insta{
+      background-image: url(images/icon-instagram.svg);
+    }
+
+    .about a,
+    .career a{
+      text-decoration: none;
+      transition: 0.5s all;
+    }
+
+    .about a:hover,
+    .career a:hover{
+      text-decoration: underline;
+      color: var(--button-color);
+    }
+
+    .location{
+      min-width: 20px; /*idk why its not working with simple*/
+      min-height: 20px; /* width and height  */
+      margin-top: 10px;
+    }
+
+    .phone,.mail{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      /*background-color: blue;*/
+    }
+    .location{
+      background-image: url(images/icon-location.svg);
+    }
+    .phone{
+      background-image: url(images/icon-phone.svg);
+    }
+    .mail{
+      background-image: url(images/icon-email.svg);
+    }
+
+    .copyright{
+      position: relative;
+      right: 0;
+      align-self: end;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+
+
+    br{
+      display: none;
+    }
